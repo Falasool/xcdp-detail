@@ -1,0 +1,269 @@
+/* 
+
+--- 01 TYPORGRAPHY STSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights:
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph deafult: 1.6 
+
+*/
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  scrollbar-width: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  /* text-decoration: none; */
+  list-style: none;
+  vertical-align: middle;
+  outline: none;
+}
+
+/* *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+} */
+
+body {
+  font-family: "Noto Sans SC", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  /* 用于movile布局的header */
+  /* only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  /* 红色系 */
+  --red-price-err: #E34242 /* 红色/价格 错误红*/
+  --red-tag-activity-norm: #E93E28 /* 标签/活动 正常红*/
+  
+  /* 文字颜色 */
+  --text-white: #ffffff; /* 白色 */
+  --text-light: #999999; /* 轻 */
+  --text-primary: #333333; /* 主色 */
+  --text-medium: #666666; /* 中 */
+  --text-most-heavy: #000000; /* 最重 */
+  --text-transparent: transparent; /* 透明 */
+  /* 文字大小 */
+  --text-3-normal: 1.6rem;
+  --text-4-normal: 1.4rem;
+  --text-5-normal:1.2rem
+
+  /* 活动标签颜色 */
+  --tag-activity-normal: #E93E28; /* 活动-正常 */
+  --tag-activity-outline: #ffd0cf; /* 活动-描边 */
+
+  /* 中性色 */
+  --neutral-divider: #eeeeee; /* 分割线 */
+  --neutral-icon: #cccccc; /* 图标 */
+  --neutral-background: #f8f8fa; /* 底色 */
+
+  /* 品牌色 */
+  --brand-normal: #ff4500; /* 品牌：normal */
+  --brand-button-gradient-start: #ff7f50; /* 按钮渐变起始色 */
+  --brand-button-gradient-end: #ff6347; /* 按钮渐变结束色 */
+
+  /* 特定标签颜色 */
+  --tag-halal-outline: #d2ecd5; /* 清真/描边 */
+  --tag-halal-normal: #119f1f; /* 清真/正常 */
+  --tag-halal-fill: #e7f5e9; /* 清真/填充 */
+  --tag-new-normal: #ffa14a; /* 新品/正常 */
+  --tag-new-fill: #fff6ed; /* 新品/填充 */
+  --tag-new-outline: #ffeddd; /* 新品/描边 */
+  --tag-thaw-normal: #42aefc; /* 易解冻/正常 */
+  --tag-thaw-fill: #ecf7ff; /* 易解冻/填充 */
+  --tag-thaw-outline: #dbf0ff; /* 易解冻/描边 */
+  --tag-brand-outline: #60a3bc; /* 品牌/描边 */
+
+
+}
+
+.scroll-container {
+  overflow: hidden;
+  width: 100%;
+  /* border-radius: 1rem; */
+}
+.scroll-block {
+  white-space: nowrap;
+  overflow-x: auto;
+  
+}
+
+/* ********************* */
+/* GENERAL COMPONENTS */
+/* ********************* */
+
+/* 
+* Flex 的公共样式
+* 标题的公共样式
+* 按钮的各种状态
+* link的各种状态
+* 字重
+*/
+
+/* vertical-divide-line */
+
+.vertical-divide-line{
+  border-right: 1px solid #eee;
+}
+
+/* horizontal-divide-line */
+
+.horizontal-divide-line{
+  border-bottom: 1px solid #eee;
+}
+
+
+/* section 卡片样式 */
+.frame__card {
+  padding: 1.6rem 1.2rem 0 1.2rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.details__card {
+  padding: 1.6rem 0 0 0;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+/* 
+ * 标签组
+ * 标准标签
+ * 活动标签
+*/
+.tag-normal {
+  font-size: 1.2rem;
+  padding: 0 0.6rem;
+  border-radius: 0.4rem;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  /* font-size: var(--text-5-normal); */
+  font-weight: 300;
+  white-space: nowrap;
+  /* align-self: flex-start; */
+}
+.tag-activity {
+  color: #E93E28;
+  border: #FFD0CF solid 1px;
+  font-size: 1rem;
+  padding: 0 0.4rem;
+  border-radius: 0.3rem;
+  line-height: 1.6;
+  font-weight: 300;
+  white-space: nowrap;
+  /* align-self: flex-start; */
+}
+.tag-trait-big {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  padding: 0 0.4rem;
+  border-radius: 0.4rem;
+  line-height: 1.6;
+  font-weight: 300;
+  white-space: nowrap;
+  /* align-self: flex-start; */
+}
+.tag-old-normal {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  padding: 0 0.6rem;
+  border-radius: 0.4rem;
+  line-height: 1.6;
+  font-weight: 300;
+  white-space: nowrap;
+  /* align-self: flex-start; */
+}
+.record {
+  background-color: #FFA14A;
+}
+.waiting-free {
+  background-color: #42AEFC;
+}
+.chengp{
+background-color: #F87036;
+}
+.wul{
+background-color: #5581FA;
+}
+/* 横向滚动column的容器样式，配合使用 */
+
+.scroll-container {
+  overflow: hidden;
+  width: 100%;
+  /* border-radius: 1rem; */
+  scrollbar-width: none;
+}
+.scroll-block {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.scroll-block::-webkit-scrollbar {
+  display: none;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  /* 撑起a标签这个inline元素 */
+  /* 对 .btn 才是必要的 */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* 过渡动画 */
+  transition: all 0.3s;
+}
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+

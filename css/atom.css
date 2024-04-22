@@ -1,0 +1,144 @@
+/* font-size */
+.primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.secondary {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--text-most-heavy);
+  /* margin-bottom: 9.6rem; */
+}
+
+.tertiary {
+  font-size: 1.6rem;
+}
+
+.subheading {
+  font-weight: 300;
+  /* font-size: var(--text-4-normal); */
+  font-size: 1.4rem;
+  line-height: 1.6;
+  height: 1.5;
+  /* letter-spacing: 0.6px; */
+}
+.subheading-normal {
+  font-weight: 400;
+  /* font-size: var(--text-4-normal); */
+  font-size: 1.4rem;
+  line-height: 1.6;
+  height: 1.5;
+  /* letter-spacing: 0.6px; */
+}
+.fifth {
+  font-size: 1.2rem;
+}
+/* gap */
+
+.gap-6 {
+  gap: 0.6rem;
+}
+
+/* font-weight */
+
+.bold {
+  font-weight: 400;
+}
+.bolder {
+  font-weight: bold;
+}
+
+/* 文字对齐方式 */
+
+/* 水平居中 */
+.text-align__center {
+  text-align: center;
+}
+/* 垂直对齐方式 */
+.vertical-align__baseline {
+  vertical-align: baseline;
+}
+.vertical-align__middle {
+  vertical-align: middle;
+}
+
+/* color */
+
+.error-red {
+  color: #e34242;
+}
+.text-color-height {
+  color: #000000;
+}
+.text-color-middle {
+  color: var(--text-medium); //666666
+}
+.text-color-light {
+  color: var(--text-light); //999999
+}
+.text-color-brand-primary {
+  color: #333333;
+}
+.tag-activity-normal {
+  /* color: var(--tag-activity-normal); */
+  color: #e93e28;
+} // #E93E28; /* 活动-正常 */
+
+/* display */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-action-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid--2--cols__service {
+  display: grid;
+  column-gap: 0rem;
+  row-gap: 1.2rem;
+  align-items: flex-start;
+  grid-template-columns: 4.8rem 27.9rem;
+}
+.display-none {
+  display: none;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+.position-sticky {
+  position: sticky;
+}
+/* text-decoration */
+.strike-through-text {
+  text-decoration: line-through;
+}
+
+.white-space__nowrap {
+  white-space: nowrap;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
